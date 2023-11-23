@@ -14,9 +14,9 @@ class RolesTableSeeder extends Seeder
     public function run(): void
     {
         DB::table('roles')->insert([
-            ['name' => 'user', 'description' => 'Regular User'],
-            ['name' => 'admin', 'description' => 'Administrator'],
-            ['name' => 'superadmin', 'description' => 'Super Administrator'],
+            ['name' => 'user', 'description' => 'Regular User.'],
+            ['name' => 'admin', 'description' => 'Owner of Garage.'],
+            ['name' => 'superadmin', 'description' => 'Owner of the system.'],
         ]);
     }
 }

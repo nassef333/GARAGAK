@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('coupons', function (Blueprint $table) {
             $table->id();
-            $table->decimal('value')->nullable();
+            $table->integer('value')->nullable();
             $table->string('code')->nullable();
             $table->boolean('is_enabled')->nullable();
             $table->unsignedInteger('count')->nullable();
